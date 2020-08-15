@@ -1,0 +1,12 @@
+[
+    {
+        "search_item": "Assertion",
+        "search_result": "Assertion Structure",
+        "result_url": "https://devexpress.github.io/testcafe/documentation/guides/basic-guides/assert.html#assertion-structure"
+    },
+    {
+        "search_item": "Live Mode",
+        "search_result": "LiveModeRunner Object",
+        "result_url": "https://devexpress.github.io/testcafe/documentation/guides/basic-guides/run-tests.html#live-mode"
+    }
+]

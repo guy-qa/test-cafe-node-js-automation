@@ -1,0 +1,1 @@
+export const homePage_url = process.env.url || 'https://devexpress.github.io/testcafe/documentation/getting-started/'

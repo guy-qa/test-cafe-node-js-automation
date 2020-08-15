@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "protocol": "inspector",
+            "request": "launch",
+            "name": "Launch test files with TestCafe",
+            "program": "${workspaceFolder}/node_modules/testcafe/bin/testcafe.js",
+            "args": [
+                "-c", // add this to run test concurrently on all browsers
+                "1", // number of test instances to run for each browser
+                "chrome,firefox", // browsers to run tests on
+                "${relativeFile}",
+                "--reporter",
+                "html:reports/TestReport_`date +%d-%b-%Y_%I:%M%p`.html" //generates html test reports named as the date and time of test run
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        }
+    ]
+}
